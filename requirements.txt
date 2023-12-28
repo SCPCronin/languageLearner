@@ -1,0 +1,6 @@
+requests
+sounddevice
+numpy
+openai
+gtts
+pygame
