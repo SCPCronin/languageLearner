@@ -1,6 +1,7 @@
 import requests
 from Difficulty import Difficulty
 from Languages import Languages
+import os
 
 class OpenAIImplementation:
 
@@ -46,7 +47,7 @@ class OpenAIImplementation:
 
         # Specify Headers, including Authorization Header and Content Type
         headers = {
-            'Authorization': 'Bearer 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',
+            'Authorization': f'Bearer {os.environ.get("OPENAI_API_KEY")}',
             'Content-Type': 'application/json'
         }
 
